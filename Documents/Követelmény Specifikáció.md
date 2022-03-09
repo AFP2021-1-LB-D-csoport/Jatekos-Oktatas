@@ -10,9 +10,13 @@ Ez a kép egyértelműen a múlt századot idézi. A mai gyerekeknek nehezebb le
 
 Az iskola informatikatanára már régóta álmodozik egy interaktív weboldal elkészítéséről, ahol a diákok játszva sajátíthatnák el azokat az ismereteket, amiket a tanáraik csak küszködve tudnak megértetni velük. Erre az oldalra nem lesz kötelező fellépni a diákoknak, de nagy valószínűséggel mégis mindenki regisztrálni fog, hiszen a tankönyvekből és jegyzetekből oly nehezen megérthető feladatokat itt sokkal szórakoztatóbb formában oldhatják meg, aminek következtében a dolgozatok is könnyebben fognak menni. Lesz majd ranglista is a weboldalon, ezzel is buzdítva a diákokat a még több és még eredményesebb játékra.
 
+Az oldalnak platformfüggetlennek kell lennie, mert a diákok mind számítógépről, mint tabletről használni fogják majd a szolgáltatásokat. Fontos a könnyű áttekinthetőség és a színes, vidám megjelenés. A bővíthetőségre is oda kell figyelni, hogy bármikor listába lehessen venni egy új játékot, vagy esetleg új funkcióval gazdagítani az oldalt.
+
 #### **A rendszerre vonatkozó szabályok**
 
+A rendszer, lévén általános iskolás - elsősorban alsós - gyermekeknek készül, kizárólag a korosztálynak megfelelő tartalommal és hirdetésekkel rendelkezhet. A játékoknak, a mai kor követelményeinek megfelelően, amikor csak lehetséges, magukon kell hordozniuk a politikai korrektség jegyeit (pl. férfi/női/gendersemleges és színesbőrű karakterek). A szexualitásra utaló tartalom nem engedélyezett, továbbá szigorúan politikamentesnek kell lennie.
 
+Az oldal HTML, CSS, JavaScript és React felhasználásával készüljön, az adatbázis pedig MySQL alapokra épüljön.
 
 #### **Jelenlegi üzleti folyamatok modellje**
 
@@ -31,7 +35,13 @@ Regisztráció után:
 
 #### **Követelménylista**
 
-
-
-#### Fogalomtár
+| Kód  |                       Megnevezés                        |
+| :--: | :-----------------------------------------------------: |
+|  K4  |                Ellenőrzött regisztráció                 |
+|  K2  |     Regisztrált felhasználók tárolása adatbázisban      |
+|  K5  |                Bejelentkezési lehetőség                 |
+|  K1  | A játékok letisztult, egyszerű megjelenítése a weblapon |
+|  K8  |              Játékok keresése szűrésekkel               |
+|  K6  |       Rekordok, pontszámok tárolása adatbázisban        |
+|  K7  |             Felhasználói adatok módosítása              |
 
