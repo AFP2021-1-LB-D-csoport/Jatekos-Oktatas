@@ -14,7 +14,9 @@ Ez a kép egyértelműen a múlt századot idézi. A mai  gyerekeknek nehezebb l
 
 #### Vágyálom rendszer leírása
 
+Az iskola informatikatanára már régóta álmodozik egy interaktív weboldal elkészítéséről, ahol a diákok játszva sajátíthatnák el azokat az ismereteket, amiket a tanáraik csak küszködve tudnak megértetni velük. Erre az oldalra nem lesz kötelező fellépni a diákoknak, de nagy valószínűséggel mégis mindenki regisztrálni fog, hiszen a tankönyvekből és jegyzetekből oly nehezen megérthető feladatokat itt sokkal szórakoztatóbb formában oldhatják meg, aminek következtében a dolgozatok is könnyebben fognak menni. Lesz majd ranglista is a weboldalon, ezzel is buzdítva a diákokat a még több és még eredményesebb játékra.
 
+Az oldalnak platformfüggetlennek kell lennie, mert a diákok mind számítógépről, mint tabletről használni fogják majd a szolgáltatásokat. Fontos a könnyű áttekinthetőség és a színes, vidám megjelenés. A bővíthetőségre is oda kell figyelni, hogy bármikor listába lehessen venni egy új játékot, vagy esetleg új funkcióval gazdagítani az oldalt.
 
 #### Követelménylista
 
@@ -30,11 +32,11 @@ Ez a kép egyértelműen a múlt századot idézi. A mai  gyerekeknek nehezebb l
 
 #### Használati esetek
 
+Gyakorlatilag három szerepkört lehet megkülönböztetni az oldal felkeresésekor.
 
-
-#### Használati esetek aktorok szerinti bontásban
-
-
+- Admin: A nevének megfelelően mindent lát, mindenhez hozzáfér, és tetszés szerint módosíthat bármit az oldalon. Ilyen jogosutságokkal lehetőség szerint csak 1-2, maximum 3 ember rendelkezzen.
+- Látogató: Bárki, aki az oldalra téved, regisztráció nélkül szemrevételezheti a játékok listáját és rövid leírását, és tetszés szerint szűréseket is végezhet, rákereshet bizonyos típusú játékokra. Magát a játékot azonban már nem tudja elindítani, és a ranglistákat, pontrekordokat sem láthatja.
+- Regisztrált/bejelentkezett felhasználó: Ebbe a csoportba praktikusan kizárólag az iskolai tanulói tartozhatnak, hiszen lényegében nekik készült az oldal. Bárki szabadon regisztrálhat, de az admin rendszeresen ellenőrzi a regisztrált felhasználók névsorát, és törölheti azokat, akik nem az iskola tanulói. A regisztrált felhasználók a látogatók lehetőségein felül elindíthatnak játékokat, megnézhetik a ranglistákat, és módosíthatják a fiókjukhoz tartozó adatokat.
 
 #### Képernyőtervek
 
@@ -42,3 +44,19 @@ Ez a kép egyértelműen a múlt századot idézi. A mai  gyerekeknek nehezebb l
 
 #### Forgatókönyvek
 
+Pistike szeretne lejátszani egy kör Madzsongot, hogy megdöntse a barátja, Töhötöm rekordját.
+
+- Pistike a tabletjén felkeresi a weboldalt
+- a jelszavát már korábban megjegyeztette a böngészőjével, ezért a rendszer automatikusan bejelentkezteti
+- a keresőbe beírja, hogy "Madzsong", mire az oldal megjeleníti a releváns találatok listáját
+- Pistike rábök a keresett játékra, mire az megjelenik nagyobb méretben
+- Pistike kiválasztja azt az alakzatot, amelyiknél a barátja tartja a rekordot
+- elindul a játék
+- a játék végeztével megjelenik a frissített ranglista, ahol Pistike talán átvette a vezetést Töhötömtől, talán nem
+
+Egy látogató szeretné megtekinteni, milyen játékok vannak a korosztályának.
+
+- a látogató a laptopján felkeresi az oldalt
+- a részletes kereső menüpontot megnyitva, kipipálja a 8-10 éves korosztályt
+- a kereső megjeleníti a releváns találatokat
+- a látogató megtekintheti a listát, de kattintásra figyelmeztetést kap, hogy csak bejelentkezés után lehet játszani
