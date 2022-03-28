@@ -45,3 +45,22 @@ Regisztráció után:
 |  K6  |       Rekordok, pontszámok tárolása adatbázisban        |
 |  K7  |             Felhasználói adatok módosítása              |
 
+#### Fogalomtár
+
+Kreativitás: Többféle értelemben használhatjuk. Van, amikor az alkotói folyamatot értjük alatta, van, hogy az alkotó személyiség tulajdonságát (pl.: tehetséges személyek esetén), máskor pedig az alkotás eredményét emeljük ki.A kreativitás eredeti, újszerű dolgok, tárgyak, gondolatok létrehozásában nyilvánul meg.
+
+Ezenkívül az egyéni látásmód, a problémákhoz való hozzáállás szokatlan megoldásának képességét is magába foglalja.
+
+Készségfejlesztés: A készségfejlesztési folyamat célja mindazoknak a készségeknek a folyamatos fejlesztése, amelyek gyakorlati alkalmazása révén az gyermekek egyéni hatékonysága, ezáltal az osztály teljesítménye nő.
+Ehhez nyújtanak segítséget azok a játékok, amiket kifejezetten ezzel a céllal készítettek el, hogy a gyermekek különböző készségeit fejlesszék.
+
+Érzelmi intelligencia fejlesztés: Többféle intelligenciát különböztetünk meg, többek között nyelvi, zenei, matematikai-logikai, érzelmi intelligenciát.
+Az érzelmi intelligencia alatt azt a képességet értjük, hogy az egyén milyen jól tudja felismerni, megérteni és kezelni az érzelmeket, mind sajátját, mind másokét. Aki ugyanis jelentőséget tulajdonít saját belső érzéseinek és érzelmeinek, együttérzőbbé válhat másokkal szemben is. Képes elválasztani magát a viselkedést a viselkedést generáló érzelmektől, minek következtében például nem vesz magára olyat, ami valójában nem ellene szól. Nem véletlenül nevezik ezt a képességet „emberekhez való intelligenciának” is. Akinek magasabb ez az értéke, az szociálisan sokkal aktívabb.
+A különböző multiplayer játékok segíthetik ennek fejlesztését.
+
+
+Vizuális nevelés: Ennek a gyakorlati tevékenységeinek fontos célja az érzéki tapasztalás, a környezettel való közvetlen kapcsolat fenntartása, erősítése, ezáltal a közvetlen tapasztalatszerzés, a képekkel való érintkezés, az érzékelés érzékenységének fokozása. További cél tudatosítani az érzékelés különböző formáinak (például látás, hallás, kinetikus érzékelés) kapcsolatát, amely a számítógépes környezet bevonásával képes egy újabb, „más minőségű” intermediális szemléletet is kialakítani.
+
+
+Matematikai fejlesztés: 
+A tanulók matematikai gondolkodásának fejlesztése során alapvető cél, hogy mind inkább ki tudják választani és alkalmazni tudják a természeti és társadalmi jelenségekhez illeszkedő modelleket, gondolkodásmódokat (analógiás, heurisztikus, becslésen alapuló, matematikai logikai, axiomatikus, valószínűségi, konstruktív, kreatív stb.), módszereket (aritmetikai, algebrai, geometriai, függvénytani, statisztikai stb.) és leírásokat.
