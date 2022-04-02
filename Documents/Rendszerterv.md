@@ -31,7 +31,13 @@ A második fázis tartalmazza a rendszer implementálást, tesztelést, hibajav�
 
 ####    2.3 Projekt mérföldkövek
 
-
+1. Megrendelő igényeinek felmérése, vitás kérdések tisztázása
+2. Követelmény specifikáció elkészítése
+3. Funkcionális specifikáció elkészítése
+4. Rendszerterv elkészítése
+5. Programozási feladatok elvégzése
+6. Tesztelés és hibajavítás befejezése
+7. Működő rendszer átadása
 
 ### 3. Üzleti folyamatok modellje
 
@@ -51,17 +57,41 @@ A második fázis tartalmazza a rendszer implementálást, tesztelést, hibajav�
 
 #### 4.1 Funkcionális követelmények
 
+- A felhasználó bejelentkezés nélkül képes használni az oldal bizonyos funkcióit. Tehát végig tudja böngészni a játékok listáját és szűréseket is el tud végezni rajtuk. Eléri továbbá a regisztrációt és a bejelentkezést a menüsorból. Ezeknek megfelelően szükséges az oldalon történő navigálást és megjelenést kezelni. 
 
+  A listázás és a szűrés során az oldal az adatbázisban tárolt adatokat tárolt eljárások és lekérdezések segítségével szűrve kapja meg. Így a felhasználó a teljes adatbázisban vagy az adatbázis egy részhalmazában képes keresni.
+
+  A regisztrációnál és a bejelentkezésnél az oldal szintén adatbáziskapcsolatot használ a felhasználó azonosítására vagy a felhasználói fiók létrehozására. Minden felhasználó számára egyedi azonosító(id) generálódik, amely alapján a felhasználó később azonosításra kerül. Mind a regisztráció, mind a bejelentkezés esetében az adatokat ellenőrizve továbbítja az oldal az adatbázis felé, ezzel elkerülve az esetleges hibák előfordulását.
+
+- A bejelentkezett felhasználó számára az oldalon megjelennek új funkciók. Ilyen a felhasználói fiók szerkesztése, saját pontszámok megtekintése, a különféle játékokban felállított rekordok kilistázása.
+
+  A felhasználói fiók szerkesztésekor az adatbázisban a felhasználót leíró adatokat lehet megváltoztatni. Ehhez a megváltoztatni kívánt adatokat szükséges megadni. A bevitt adatok ellenőrzésre kerülnek, ezután az adatbázissal kerül kiépítésre a kapcsolat és a megadott adatok az adatbázisban is megváltoztatásra kerülnek.
+
+  A saját pontszámok és az elért rekordok megjelenítésekor szintén az adatbázisból kerülnek lekérdezésre az adatok.
+
+- Admin jogosultsággal lehetőség van új játékok felvitelére vagy a meglévők törlésére. Ezen műveletek végrehajtásához külön kis ikonok jelennek meg admin módban. Játékot hozzáadni a játékok oldalon megjelenő + jellel lehetséges, törölni pedig az adott játék mellett elhelyezkedő kuka ikonnal.
+
+  Új játék feltöltésekor megjelenik egy űrlap, melyen a játék címét, jellemzőit, ajánlott korosztályát, témáját lehet megadni, továbbá be lehet tallózni a feltölteni kívánt állományt. A feltöltés gombra kattintva nem csak a játék töltődik fel az oldalra, de egy új rekord is rögzítésre kerül az adatbázisban a megadott adatokkal.
+
+  Törlésnél egyrészt letörlődik a játék teljes állománya a weboldalról, másrészt az adatbázisban róla tárolt adatok is törlésre kerülnek. Figyelni kell rá, hogy a hozzá kapcsolódó pontszámokat és rekordokat is töröljük az adatbázisból.
 
 #### 4.2 Nem funkcionális követelmények 
 
 - **Termék követelmények**
-
+  - Az oldal a kéréseket adatbáziskapcsolat kiépítésétől függetlenül 1000ms-on belül képes végrehajtani
+  - Az adatbázisban a felhasználó csak a saját adatait képes megváltoztatni.
+  - Az adatbázissal történő kommunikáció, amennyiben lehetséges, tárolt eljárásokon keresztül történjen.
+  - A szoftver mérete nem haladja meg az 5 GB-ot.
+  - Az oldal legyen fiatalos, modern kinézetű, figyelemfelkeltő.
+  - Minden körülmények között fokozott figyelmet kell fordítani a tartalom politikai korrektségére, pl. a hagyományos női/férfi besoroláson kívül meg kell jelennie a gendersemlegességnek.
+  - Bármilyen szexuális utalás a leghatározottabban tilos, csakúgy, mint a politikai tartalom.
 - **Szervezeti követelmények**
-
+  - A szoftver a szerződésben meghatározott időpontig, az előzetesen meghatározott követelményeknek megfelelő állapotban átadásra kerül. Ellenkező esetben a szerződésben feltüntetett kötbér megfizetése terheli a fejlesztő céget.
+  - A program az előzetesen meghatározott rendszereken használható.
 - **Külső követelmények**
 
-  
+  - A szoftverfejlesztő cég szakemberei és a megrendelő a kapcsolattartást az előzetesen meghatározott gyakorisággal folytatják. Amennyiben a fejlesztés előrehaladása érdekében további konzultáció szükséges, azt időpontegyeztetés után lehetséges beiktatni.
+  - A szoftverfejlesztő cég munkatársainak a jóváhagyott etikai kódex alapján kell viselkedniük.
 
 ### 5. Funkcionális terv
 
