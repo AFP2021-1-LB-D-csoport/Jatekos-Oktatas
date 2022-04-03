@@ -62,14 +62,12 @@ Admin: Menedzselheti a játékokat. A játékokhoz tartozó leírásokat, elneve
 
   A főoldalon található felső menüsorban helyet foglaló Regisztráció gombra kattintva az oldal a regisztrációs lapra navigál, ahol egy egyszerű regisztrációs űrlap kitöltésére van lehetőség. Itt az érvényes e-mail cím és a választott jelszó megadását követően a Regisztráció gombra kattintva lehet megkezdeni a műveletet. Az adatok ellenőrzése után megtörténik a regisztráció. Amennyiben az adatok helytelennek bizonyultak, az oldal ezt jelezni fogja.
   
-
 - Bejelentkezés:
   A főoldalon látható felső menüsorban található Bejelentkezés gombra kattintva, az oldal a bejelentkezést megvalósító oldalra navigál. Itt az e-mail cím és jelszó páros megadását követően a Login gombra kattintva elkezdődik a bejelentkezési folyamat. Amennyiben a megadott adatok helyesek, akkor az oldalra történő bejelentkezés sikeres volt. Ha bármelyik adat helytelen volt, akkor az oldal ezt hibaüzenettel közli.
 
 - Felhasználó adatainak megváltoztatása
   A felhasználói fiókkal rendelkező bejelentkezett tagoknak lehetőségük van a felhasználói profilukhoz tartozó személyes adatok szerkesztésére. A bejelentkezést követően a felső menüsorban meg jelenik az aktuálisan bejelentkezett felhasználó e-mail címe. Erre kattintva a felhasználó adatlapjára történik a navigáció. Itt bármelyik adatot módosíthatja. Az elfogad gombbal történik meg az adatok módosításának véglegesítése.
   
-
 - Játék indítása:
   A játékok elindításához először bejelentkezés szükséges. Ezután a felhasználó által megfogalmazott feltételeknek megfelelő játékok listájából kiválasztott játékra kattintva új lapon betöltődik a játék. 
 
@@ -124,7 +122,13 @@ Admin: Menedzselheti a játékokat. A játékokhoz tartozó leírásokat, elneve
 
 ### 5. Funkcionális terv
 
+Rendszerhasználati esetek és lefutásaik
 
+![regisztráció]()
+
+![játékindítás]()
+
+![játék hozzáadása]()
 
 ### 6. Fizikai környezet
 
