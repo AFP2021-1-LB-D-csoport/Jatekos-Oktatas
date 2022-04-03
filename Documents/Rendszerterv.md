@@ -124,11 +124,17 @@ Admin: Menedzselheti a játékokat. A játékokhoz tartozó leírásokat, elneve
 
 Rendszerhasználati esetek és lefutásaik
 
-![regisztráció]()
+![regisztráció](https://raw.githubusercontent.com/AFP2021-1-LB-D-csoport/Jatekos-Oktatas/main/Documents/Mell%C3%A9kletek/regisztracio_folyamat.png)
 
-![játékindítás]()
 
-![játék hozzáadása]()
+
+![játékindítás](https://raw.githubusercontent.com/AFP2021-1-LB-D-csoport/Jatekos-Oktatas/main/Documents/Mell%C3%A9kletek/jatek_inditas_folyamat.png)
+
+
+
+![játék hozzáadása](https://raw.githubusercontent.com/AFP2021-1-LB-D-csoport/Jatekos-Oktatas/main/Documents/Mell%C3%A9kletek/uj_jatek_folyamat.png)
+
+
 
 ### 6. Fizikai környezet
 
