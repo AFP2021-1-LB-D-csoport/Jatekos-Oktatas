@@ -1,0 +1,28 @@
+INSERT INTO user_type VALUES('00', 'admin');
+INSERT INTO user_type VALUES('01', 'user');
+
+INSERT INTO game_type VALUES('01', 'quiz');
+INSERT INTO game_type VALUES('02', 'matek');
+INSERT INTO game_type VALUES('03', 'rajz');
+INSERT INTO game_type VALUES('04', 'idegen nyelv');
+INSERT INTO game_type VALUES('05', 'informatika');
+
+INSERT INTO age_group VALUES('01', 'első osztály');
+INSERT INTO age_group VALUES('02', 'második osztály');
+INSERT INTO age_group VALUES('03', 'harmadik osztály');
+INSERT INTO age_group VALUES('04', 'negyedik osztály');
+INSERT INTO age_group VALUES('05', 'ötödik osztály');
+INSERT INTO age_group VALUES('06', 'hatodik osztály');
+INSERT INTO age_group VALUES('07', 'hetedik osztály');
+INSERT INTO age_group VALUES('08', 'nyolcadik osztály');
+
+INSERT INTO profile(user_name, email_address, phone_number, date_of_registration, password, user_type_id) VALUES('teszt1', 'teszt1@gmail.com', NULL, DATE '2022-02-03', 'teszt1', '01');
+INSERT INTO profile(user_name, email_address, phone_number, date_of_registration, password, user_type_id) VALUES('teszt2', 'teszt2@gmail.com', NULL, DATE '2019-02-22', 'teszt2', '01');
+INSERT INTO profile(user_name, email_address, phone_number, date_of_registration, password, user_type_id) VALUES('teszt3', 'teszt3@gmail.com', '36301234556', DATE '2021-06-30', 'teszt3', '01');
+INSERT INTO profile(user_name, email_address, phone_number, date_of_registration, password, user_type_id) VALUES('teszt4', 'teszt4@gmail.com', NULL, DATE '2022-04-01', 'teszt4', '01');
+INSERT INTO profile(user_name, email_address, phone_number, date_of_registration, password, user_type_id) VALUES('teszt5', 'teszt5@gmail.com', '30702456666', DATE '2022-04-05', 'teszt5', '01');
+INSERT INTO profile(user_name, email_address, phone_number, date_of_registration, password, user_type_id) VALUES('admin1', 'admin1@gmail.com', 'NULL', DATE '2022-04-05', 'admin1', '00');
+
+INSERT INTO game(game_type_id, game_age_group_id, game_name, game_location, last_update, game_desc) VALUES('01', '01', 'A világ legjobb quiz játéka', NULL, DATE '2022-04-05', 'A legeslegjobb quiz játék az univerzumban! Ennek a játéknak a használatával lexikális tudás fejlődése megkérdőjelezhetetlen.');
+
+INSERT INTO scoreboard(game_id, profile_id, score) VALUES(1, 1, 100); 
