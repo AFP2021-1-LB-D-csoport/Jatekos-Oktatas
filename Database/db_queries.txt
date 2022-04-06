@@ -1,0 +1,56 @@
+# user lekérése
+SELECT profile_id
+FROM profile
+WHERE (user_name = 'username'
+OR email_address = 'e-mail')
+AND password = 'pw';
+
+
+#Az összes játék lekérése
+SELECT game.game_id, game_type.game_type_name, age_group.age_group_name, game.game_name, game.game_location, game.last_update, game.game_desc FROM game 
+INNER JOIN game_type ON game_type.game_type_id = game.game_type_id 
+INNER JOIN age_group ON age_group.age_group_id = game.game_age_group_id;
+
+
+#A szűrőknek megfelelő játékok lekérése
+SELECT game.game_id, game.game_name, game_type.game_type_name, age_group.age_group_name, game.game_location, game.last_update, game.game_desc FROM game 
+INNER JOIN game_type ON game_type.game_type_id = game.game_type_id 
+INNER JOIN age_group ON age_group.age_group_id = game.game_age_group_id
+WHERE game_type.game_type_name = 'játéktípus' AND age_group.age_group_id >= (SELECT age_group_id FROM age_group WHERE age_group_name = 'korcsoport');
+
+
+# regisztráció
+INSERT INTO profile
+(user_name, email_address, phone_number, date_of_registration, password, user_type_id) VALUES('username', 'e-mail', 'telefonszám', 'regisztráció dátuma', 'jelszó', 'felhasználó típusa'); 
+# 00 admin, 01 felhasználó
+
+
+#Felhasználó adatainak változtatása
+UPDATE profile SET email_address = 'e-mail', phone_number='phone number', password='pw'
+WHERE profile_id = (SELECT profile_id FROM profile WHERE user_name = 'username');
+
+
+#A 10 legjobb pontszám lekérése egy bizonyos játékhoz név alapján
+SELECT profile.user_name, scoreboard.score FROM scoreboard 
+INNER JOIN profile ON profile.profile_id = scoreboard.profile_id
+WHERE scoreboard.game_id = (SELECT game_id FROM game WHERE game_name = 'A világ legjobb quiz játéka') ORDER BY scoreboard.score DESC LIMIT 10;
+
+
+#A 10 legjobb pontszám lekérése egy bizonyos játékhoz id alapján
+SELECT profile.user_name, scoreboard.score FROM scoreboard 
+INNER JOIN profile ON profile.profile_id = scoreboard.profile_id
+WHERE scoreboard.game_id = keresett_id ORDER BY scoreboard.score DESC LIMIT 10;
+
+#A 10 legjobb összpontszám lekérése
+SELECT profile.user_name, SUM(scoreboard.score) AS totalscore FROM scoreboard 
+INNER JOIN profile ON profile.profile_id = scoreboard.profile_id 
+GROUP BY profile.user_name 
+ORDER BY totalscore DESC LIMIT 10;
+
+
+#A személyes highscore frissítése
+UPDATE scoreboard SET score = intvalue
+WHERE score_id = ( SELECT scoreboard.score_id FROM scoreboard
+INNER JOIN profile ON profile.profile_id = scoreboard.profile_id
+INNER JOIN game ON game.game_id = scoreboard.game_id
+WHERE profile.profile_id = profile_id AND game.game_id = game_id);
