@@ -1,0 +1,58 @@
+CREATE TABLE user_type(
+    user_type_id          VARCHAR(2) NOT NULL,
+    user_type_name        VARCHAR(100),
+    PRIMARY KEY ( user_type_id )
+);
+
+CREATE TABLE game_type(
+    game_type_id           VARCHAR(2) NOT NULL,
+    game_type_name         VARCHAR(100),
+    PRIMARY KEY ( game_type_id )
+);
+
+CREATE TABLE age_group(
+    age_group_id           VARCHAR(2) NOT NULL,
+    age_group_name         VARCHAR(100),
+    PRIMARY KEY ( age_group_id )
+);
+
+CREATE TABLE profile(
+    profile_id           INT NOT NULL AUTO_INCREMENT,
+    user_name            VARCHAR(100),
+    email_address        VARCHAR(100),
+    phone_number         VARCHAR(100),
+    date_of_registration DATE NOT NULL,
+    password             VARCHAR(100),
+    user_type_id         VARCHAR(2),
+    PRIMARY KEY ( profile_id ),
+    CONSTRAINT user_type_fk FOREIGN KEY ( user_type_id )
+        REFERENCES user_type ( user_type_id )
+);
+
+
+CREATE TABLE game(
+    game_id          	 INT NOT NULL AUTO_INCREMENT,
+    game_type_id         VARCHAR(2),
+    game_age_group_id    VARCHAR(2),
+    game_name            VARCHAR(100),
+    game_location        VARCHAR(100),
+    last_update		 DATE NOT NULL,
+    game_desc            LONGTEXT,
+    PRIMARY KEY ( game_id ),
+    CONSTRAINT game_type_fk FOREIGN KEY ( game_type_id )
+        REFERENCES game_type ( game_type_id ),
+    CONSTRAINT game_age_group FOREIGN KEY ( game_age_group_id )
+        REFERENCES age_group ( age_group_id )
+);
+
+CREATE TABLE scoreboard(
+    score_id          	 INT NOT NULL AUTO_INCREMENT,
+    game_id          	 INT,
+    profile_id           INT,
+    score                INT DEFAULT 0,
+    PRIMARY KEY ( score_id ),
+    CONSTRAINT game_id_fk FOREIGN KEY ( game_id )
+        REFERENCES game ( game_id ),
+    CONSTRAINT profile_id_fk FOREIGN KEY ( profile_id )
+        REFERENCES profile ( profile_id )
+);

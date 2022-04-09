@@ -1,0 +1,56 @@
+CREATE PROCEDURE Get_user (IN username VARCHAR(100), IN email VARCHAR(100), IN pw VARCHAR(100))
+	SELECT profile_id
+	FROM profile
+	WHERE (user_name = username
+	OR email_address = email)
+	AND password = pw;
+
+
+CREATE PROCEDURE Get_all_game ()
+	SELECT game.game_id, game_type.game_type_name, age_group.age_group_name, game.game_name, game.game_location, game.last_update, game.game_desc FROM game 
+	INNER JOIN game_type ON game_type.game_type_id = game.game_type_id 
+	INNER JOIN age_group ON age_group.age_group_id = game.game_age_group_id;
+
+
+CREATE PROCEDURE Get_filtered_games (IN gameType VARCHAR(100), IN ageGroup VARCHAR(100))
+	SELECT game.game_id, game.game_name, game_type.game_type_name, age_group.age_group_name, game.game_location, game.last_update, game.game_desc FROM game 
+	INNER JOIN game_type ON game_type.game_type_id = game.game_type_id 
+	INNER JOIN age_group ON age_group.age_group_id = game.game_age_group_id
+	WHERE game_type.game_type_name = gameType AND age_group.age_group_id >= (SELECT age_group_id FROM age_group WHERE age_group_name = ageGroup);
+
+
+CREATE PROCEDURE InsertNewProfile (IN username VARCHAR(100), IN email VARCHAR(100), IN pw VARCHAR(100), IN registerDate DATE, IN phone VARCHAR(100))
+	INSERT INTO profile(user_name, email_address, phone_number, date_of_registration, password, user_type_id) 
+	VALUES(username, email, phone, registerDate, pw, '01'); 
+
+
+CREATE PROCEDURE ChangeProfileData (IN username VARCHAR(100), IN email VARCHAR(100), IN phone VARCHAR(100), IN pw VARCHAR(100))
+	UPDATE profile SET email_address = email, phone_number=phone, password=pw
+	WHERE profile_id = (SELECT profile_id FROM profile WHERE user_name = username);
+
+
+CREATE PROCEDURE Get_ScoreBoard_By_Name(IN gamename VARCHAR(100))
+	SELECT profile.user_name, scoreboard.score FROM scoreboard 
+	INNER JOIN profile ON profile.profile_id = scoreboard.profile_id
+	WHERE scoreboard.game_id = (SELECT game_id FROM game WHERE game_name = gamename) ORDER BY scoreboard.score DESC LIMIT 10;
+
+
+CREATE PROCEDURE Get_ScoreBoard_By_Id(IN gameid VARCHAR(100))
+	SELECT profile.user_name, scoreboard.score FROM scoreboard 
+	INNER JOIN profile ON profile.profile_id = scoreboard.profile_id
+	WHERE scoreboard.game_id = gameid ORDER BY scoreboard.score DESC LIMIT 10;
+
+
+CREATE PROCEDURE Get_Highscores()
+	SELECT profile.user_name, SUM(scoreboard.score) AS totalscore FROM scoreboard 
+	INNER JOIN profile ON profile.profile_id = scoreboard.profile_id 
+	GROUP BY profile.user_name 
+	ORDER BY totalscore DESC LIMIT 10;
+
+
+CREATE PROCEDURE UpdatePersonalScore(IN profileId INT, IN gameId INT, IN newScore INT)
+	UPDATE scoreboard SET score = newscore
+	WHERE score_id = ( SELECT scoreboard.score_id FROM scoreboard
+	INNER JOIN profile ON profile.profile_id = scoreboard.profile_id
+	INNER JOIN game ON game.game_id = scoreboard.game_id
+	WHERE profile.profile_id = profileId AND game.game_id = gameId);
