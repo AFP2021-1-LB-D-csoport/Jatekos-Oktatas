@@ -1,6 +1,8 @@
 import React from "react";
 import Aux from "../../../hoc/ReactAux";
 
-const game = () => <Aux>Game running...</Aux>;
+const game = (props) => {
+  return <Aux>{props.title} running...</Aux>;
+};
 
 export default game;
