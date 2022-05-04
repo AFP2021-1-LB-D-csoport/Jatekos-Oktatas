@@ -1,0 +1,22 @@
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+#footer {
+  padding: 20px;
+  color: #fff;
+  background: #333;
+}
+
+#header {
+  padding: 20px;
+  color: #fff;
+  background: #333;
+}
+
+.foundation {
+  padding: 20px;
+  color: #fff;
+  background: #555;
+}

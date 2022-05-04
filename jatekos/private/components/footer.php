@@ -1,0 +1,1 @@
+<p>Random bölcs idézet.</p>
