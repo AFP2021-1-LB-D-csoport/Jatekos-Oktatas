@@ -4,6 +4,7 @@ session_start();
 require_once 'private/utils/require.php';
 ?>
 
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
