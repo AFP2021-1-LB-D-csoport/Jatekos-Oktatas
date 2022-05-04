@@ -4,15 +4,15 @@ import Aux from "../../hoc/ReactAux";
 import Toolbar from "../Navigation/Toolbar/Toolbar";
 import Filter from "../../containers/FilterSection/Filter";
 
-const layout = (props) => (
-  <Aux>
-    <Toolbar />
-    <div className="row">
+const layout = (props) => {
+  return (
+    <Aux>
+      <Toolbar />
       <Filter />
-      <MainArea>Tartalom</MainArea>
+      <MainArea></MainArea>
       <main>{props.children}</main>
-    </div>
-  </Aux>
-);
+    </Aux>
+  );
+};
 
 export default layout;
