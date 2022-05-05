@@ -16,6 +16,7 @@
     $menu[] = ['href' => '?p=users&m=login', 'title' => 'Bejelentkezés'];
   }
   $menu[] = ['href' => '?p=about', 'title' => 'Rólunk'];
+  $menu[] = ['href' => '?p=QuizGame', 'title' => 'Játékok'];
   $menu[] = ['href' => '?p=main', 'title' => 'Főoldal'];  
   
   
