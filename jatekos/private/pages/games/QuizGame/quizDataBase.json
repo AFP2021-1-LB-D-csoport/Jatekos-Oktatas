@@ -1,0 +1,109 @@
+{
+    "data": [
+        {
+            "question":"Melyik nap volt az Államalapítás",
+            "choices": "augusztus 20, március 15, június 4, december 12",
+            "answer": "agusztus 20"
+        }
+        {
+            "question":"Melyik évben született Petőfi Sándor",
+            "choices": "1823, 1678, 1845, 1856",
+            "answer": "1823"
+        }
+        {
+            "question":"Mikor volt a nándorfehérvári diadal?",
+            "choices": "1327, 1564, 1444, 1456",
+            "answer": "1456"
+        }
+        {
+            "question":"Mikor kezdte uralkodását Mátyás Király?",
+            "choices": "1458, 1432, 1490, 1345",
+            "answer": "1458"
+        }
+        {
+            "question":"Meddig uralkodott Mátyás király",
+            "choices": "1234, 1467, 1490, 1356",
+            "answer": "1490"
+        }
+        {
+            "question":"Mikor volt a Dózsa féle felkelés?",
+            "choices": "1848, 1567, 1543, 1514",
+            "answer": "1514"
+        }
+        {
+            "question":"Mikor törtek be az oszmánok?",
+            "choices": "1543, 1546, 1356, 1375",
+            "answer": "1375"
+        }
+        {
+            "question":"Mikor volt a Rákóczi Szabadságharc?",
+            "choices": "1703, 1756, 1456, 1786",
+            "answer": "1703"
+        }
+        {
+            "question":"Mikor volt a jakobinus mozgalom",
+            "choices": "1795, 1790, 1857, 1568",
+            "answer": "1795"
+        }
+        {
+            "question":"Mi történt 1896-ban",
+            "choices": "háború, Kossuth Lajos születése, Gyilkosság, Hofoglalás jubileum",
+            "answer": "tegnap"
+        }
+        {
+            "question":"Mikor lépett be magyrország a 2. vh-ba?",
+            "choices": "1945, 1967, 1939, 1940",
+            "answer": "1940"
+        }
+        {
+            "question":"Kinek az oldalá lépett be országunk a 2 vh-ba?",
+            "choices": "francia, osztrák, orosz, német",
+            "answer": "német"
+        }
+        {
+            "question":"Mikor volt a rendszerváltás?",
+            "choices": "1991, 2002, 1989, 1899",
+            "answer": "1989"
+        }
+        {
+            "question":"Mikor volt a kiegyezés",
+            "choices": "1934, 1856, 1976, 1867",
+            "answer": "1867"
+        }
+        {
+            "question":"Mikor volt a tatárjárás?",
+            "choices": "1245, 1223, 1200, 1241",
+            "answer": "1241"
+        }
+        {
+            "question":"Mikor volt a Honfoglalás?",
+            "choices": "1001, 1000, 890, 895",
+            "answer": "895"
+        }
+        {
+            "question":"Mikor adták ki az Aranybullát?",
+            "choices": "1435, 1200, 1234, 1222",
+            "answer": "1222"
+        }
+        {
+            "question":"Mikor volt a törökbetörés?",
+            "choices": "1375, 1456, 1324, 1765",
+            "answer": "1375"
+        }
+        {
+            "question":"melyik évben volt a mohácsi csata?",
+            "choices": "1526, 1234, 1567, 1874",
+            "answer": "1526"
+        }
+        {
+            "question":"Mikor volt a vár bevétele?",
+            "choices": "1541, 1567, 1768, 1943",
+            "answer": "1541"
+        }
+        {
+            "question":"Mi történt 1723-ban?",
+            "choices": "pragmatica sanctio, háború, felkelés, gyilkosság ",
+            "answer": "pragmatica sanctio"
+        }
+    ]
+}
